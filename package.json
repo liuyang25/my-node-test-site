@@ -1,0 +1,28 @@
+{
+  "name": "ly-node-test-site",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm run dev:tsc | npm run dev:server",
+    "start": "npm run dev:tsc | npm run dev:server",
+    "dev:server": "node ./bin/index.js",
+    "dev:tsc": "tsc -w -p ."
+  },
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.15.5",
+    "hbs": "~4.0.1",
+    "morgan": "~1.9.0",
+    "nodemon": "^1.17.2",
+    "serve-favicon": "~2.4.5"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.16.8",
+    "@types/cookie-parser": "^1.4.1",
+    "@types/debug": "^0.0.30",
+    "@types/express": "^4.11.1",
+    "@types/node": "^9.4.7"
+  }
+}
